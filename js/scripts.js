@@ -32,7 +32,7 @@ $(document).ready(function () {
             }
         });
         email.click(function () {
-            email.css("border-color", "rgb(232, 232, 232)");
+            email.css("border", "none");
             message.slideUp(500);
         });
         check.click(function () {
@@ -48,16 +48,19 @@ $(document).ready(function () {
         navText: ["<", ">"],
         dots: false,
         responsive: {
-            0: {
+           220: {
                 items: 1
             },
-            400: {
+            480: {
                 items: 2
             },
-            600: {
+            900: {
                 items: 3
             },
-            1000: {
+            992: {
+                items: 4
+            },
+            1200: {
                 items: 5
             }
         }
