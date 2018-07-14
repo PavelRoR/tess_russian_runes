@@ -1,6 +1,6 @@
 footer#footer
 	.container
-		p ИП Кудряшов Александр Анатольевич, Тюмень, проезд Летний, 9а, ИНН 720410077658, ОГРН 315723200065100 
+		p ИП Кудряшов Александр Анатольевич, Тюмень, проезд Летний, 9а, ИНН 720410077658, ОГРН 315723200065100
 .modal.fade(tabindex="-1" role="dialog")#myModalForm
 	.modal-dialog(role="document")
 		.modal-content
@@ -11,12 +11,11 @@ footer#footer
 					form#modalForm(action="https://aleksandrkudryashov1.autoweboffice.ru/?r=personal/newsletter/sub/add&id=3568&lg=ru&Contact[id_newsletter]=" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target="_blank").form_newsletter.form_modal
 						h4.infront Запишись сейчас  и получи бонус!
 						p.form_bonus.form_bonus_after.infront_submit.hide
-						p.form_bonus.infront «»
-						p.form_bonus.form_bonus_after.span_phone.hide
+						p.form_bonus.infront «Название бонуса»
 						.email-block
 							input( type="hidden" value="1" name="required_fields[email]")
 							input(class="mail" name="Contact[email]" type="text" placeholder="Ваш email")
-						button(type="submit").button Записаться
+						button(type="submit").button.button_mail Записаться
 						p.alert_message
 						<!--Обязательный параметр. Не удалять и не изменять!-->
 						input(type="hidden" value="" name="Contact[id_newsletter]")

@@ -1,0 +1,195 @@
+#footer
+    padding: 37px 0 33px
+    text-align: center
+    background-color: #221810
+    h5
+        font-size: 24px;
+        color: rgb(255, 252, 252);
+        line-height: 1.042;
+        margin 0
+    p
+    #conditions
+        font-size: 14px;
+        font-family: "OpenSansLight", sans-serif;
+        color: rgb(254, 254, 254);
+        line-height: 1.786;
+    #conditions
+        margin 15px 0 0
+        text-decoration: underline
+.soc_buttons
+	width 100%
+	margin: 0 auto
+	a
+		display: inline-block
+		margin: 20px 18px
+		position relative
+		z-index: 1
+		.fa
+			width: 30px;
+			height: 30px;
+			background-image: linear-gradient( 0, #edb712 0%, #d58d03 100%);
+			box-shadow 0 5px 7px 0 rgba(#ffffbe, .35) inset
+			color #221810
+			font-size 20px
+			line-height 30px
+			border-radius 50%
+			&:hover
+				background-image: linear-gradient( 180deg, #edb712 0%, #d58d03 100%);
+				color: #150d06
+#myPolitics
+    .modal-title
+        text-align: center
+        font-size: 22px
+        font-family: "OpenSansSemibold", sans-serif
+        small
+            display block
+            margin-top: 0
+    .modal-body
+        p
+            font-size: 16px;
+            text-align: left
+            margin-bottom: 20px
+.modal-header
+    position relative
+button.close
+    position: absolute
+    top 20px
+    right 20px
+    border-radius: 50%
+    height 30px
+    width: 30px
+    line-height: 30px
+    font-size: 18px
+    padding 0
+    margin 0
+    z-index 99
+#myModalForm
+    .modal-content
+        background-color #B8AC82
+        background-image url(../img/for_bg.png)
+        background-repeat: repeat
+        background-position: center
+#modalForm
+    text-align: center
+    h4
+        font-size: 24px;
+        color: rgba(26,20,13,0.902);
+        margin: 20px 0
+        letter-spacing: -0.5px;
+    .form_bonus
+        font-size: 18px;
+        font-family: "OpenSansLightItalic", sans-serif;
+        color: #301b0c;
+    input
+        width: 260px
+        height: 50px
+        line-height: 50px
+        border: none
+        margin: 20px auto 10px
+        text-indent: 20px
+        background-color: #F3EEE0
+        box-shadow: 0 0 5px 3px rgba(0,0,0,.15) inset
+.alert_message {
+	display: none;
+	text-align: center;
+	font-size: 16px;
+	padding-top: 10px;
+	font-family: 'OpenSansRegular', sans-serif;
+	color: red;
+}
+.checking {
+	display: table;
+	max-width: 90%;
+	margin: 20px auto 0;
+	text-align: left;
+}
+
+.checking .check_label {
+	font-size: 11px;
+	font-family: "OpenSansRegular", sans-serif;
+	color: rgba(17, 17, 18, 0.8);
+	line-height: 22px;
+	cursor: pointer;
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 0 0 30px;
+	text-align: left
+}
+
+.checking .check_label a {
+	color: #4745d7
+    text-decoration: underline
+}
+
+.checking .check_label:before {
+	content: '';
+	border-radius: 2px;
+	background-color: #aaa;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 22px;
+	height: 22px;
+
+}
+
+.checking .check_label:after {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: -15px;
+	width: 18px;
+	height: 18px;
+	left: 3px;
+	top: -30px;
+	width: 16px;
+	height: 26px;
+	background-color: transparent;
+	opacity: 0;
+	border-bottom: 3px solid #FFD738;
+	border-right: 3px solid #FFD738;
+	-webkit-transform: rotate(41deg);
+	-ms-transform: rotate(41deg);
+	transform: rotate(41deg);
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+
+}
+
+.check {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	width: 0;
+	height 0;
+	border: 0;
+	left -99999px;
+}
+
+.check:checked + label:before {
+	border: 1px solid #c4c4c4;
+	background-color: #fff;
+
+}
+
+.check:checked + label:after {
+	opacity: 1;
+	top: -10px;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+@-webkit-keyframes autofill {
+	to {
+		color: rgba(29, 28, 24, 0.702);
+		background: #f7f8fa;
+	}
+}
+
+input:-webkit-autofill {
+	-webkit-animation-name: autofill;
+	-webkit-animation-fill-mode: both;
+}

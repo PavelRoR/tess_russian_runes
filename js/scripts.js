@@ -1,11 +1,9 @@
 $(document).ready(function () {
-
     /* Работа формы */
     $(function () {
         var check = $('.check', this),
             email = $('.mail', this),
             message = $('.alert_message', this);
-
         $(".form_newsletter").on("submit", function () {
             var check = $('.check', this),
                 message = $('.alert_message', this),
@@ -13,7 +11,6 @@ $(document).ready(function () {
                 reEm = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{1,20}$/,
                 email = $('.mail', this),
                 button = $('.button_mail', this);
-
             if (!email.val().match(reNone)) {
                 email.css("border", "1px solid red");
                 message.text('Введите email').slideDown(500);
@@ -31,9 +28,8 @@ $(document).ready(function () {
                 $(".infront_submit", this).addClass("hide");
                 $(".infront_submit", this).html("Зарегистрирован Ваш e-mail: " + email.val() + "<br>Бонус уже у Вас на почте").removeClass("hide");
                 var atr = $(this).attr('action');
-                button.val('Отправлено');
+                button.text('Отправлено');
             }
-
         });
         email.click(function () {
             email.css("border-color", "rgb(232, 232, 232)");
@@ -75,11 +71,8 @@ $(document).ready(function () {
         navText: ["<", ">"],
         dots: false,
         autoHeightClass: 'owl-height',
-		autoHeight: true
+        autoHeight: true
     })
-
-
-
     /*Страые браузеры*/
     var yaBrowserUpdater = new ya.browserUpdater.init({
         "lang": "ru",
