@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'izhitsa';
-    src: url('fonts/izhitsa.eot');
-    src: url('fonts/izhitsa.eot') format('embedded-opentype'),
-         url('fonts/izhitsa.woff2') format('woff2'),
-         url('fonts/izhitsa.woff') format('woff'),
-         url('fonts/izhitsa.ttf') format('truetype'),
-         url('fonts/izhitsa.svg#izhitsa') format('svg');
-}
