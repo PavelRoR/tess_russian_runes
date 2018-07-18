@@ -11,15 +11,19 @@
     #modalForm .form_bonus
     .for_question
     .for_answer
-    .alert_message
     .main_plan_day_list li
     .main_plan_day_bonus
     #about_description p
         font-size: 22px
     .button
-    #modalForm input
-        font-size: 20px
-        width: 310px
+    #modalForm
+        input
+        .button
+            font-size: 20px
+            width: 310px
+    #modalForm
+        input
+            margin: 20px auto
     .main_plan_day
         width: 560px
         height 610px
@@ -32,16 +36,32 @@
         width: 57%
     .autor_col_left
         width: 43%
+    .bonus_pre
+        margin: 40px 0
+    .bonus_video_wrapper
+        margin-top: 60px
+    .form_newsletter
+        input
+        .button
+            width: 100%
+    .form_newsletter_last
+        input
+        .button
+            width: 400px
+    .alert_message
+        font-size: 18px
 @media screen and (max-width 1199px)
     .contacts a .fa
-        margin 0 10px 0 25px
+        margin 0 10px 0 20px
     #tess_main
         right -180px
     #mail_section
         top -35px
-        text-align: center
-    .mail_section_bonus
-        margin-bottom: 20px
+    .form_newsletter_main
+        input
+        .button
+            width: 100%
+            margin-top: 23px;
     .main_plan_day
         width: 445px;
         height: 630px;
@@ -75,8 +95,11 @@
                 margin-bottom: 0
     #mail_section
         top: -46px;
-        .button_vk
-            margin-bottom: 20px
+        text-align: center
+    .form_newsletter_main .button, .form_newsletter_main input
+        max-width 310px
+    .form_newsletter_main input
+        margin 20px auto
     .main_plan_day
     .main_plan_day.day_2
         float: none
@@ -104,6 +127,11 @@
         right: 0;
         width: 100%;
 @media screen and (max-width 767px)
+    .contacts a .fa
+    .contacts a .fa + span
+        font-size: 14px
+    .contacts a
+        margin-bottom: 0
     #tess_main
     #about_bg
         display: none
@@ -155,11 +183,21 @@
         margin-top: 20px
     #testims_container.owl-carousel .owl-item
         min-height 130px
+    #bonus #main_screen
+        padding-bottom: 30px
+    #vk_comments
+        margin-bottom: 20px
+@media screen and (max-width 667px)
+    .contacts a
+        display block
+        margin-bottom: 5px
+    .contacts a .fa
+        margin-left: 0
 @media screen and (max-width 540px)
     .main_plan_day
         width: 100%;
         height: auto;
-        padding 90px 30px 80px
+        padding 90px 40px 80px
     .main_plan_day_bonus
     .main_plan_day_list li
         line-height: 1.3
@@ -177,10 +215,9 @@
         display block
     #main_content
         padding-bottom: 30px
+    #feedback
+        padding 30px 0
 @media screen and (max-width 426px)
-    .contacts a .fa
-    .contacts a .fa + span
-        font-size: 14px
     .pre
         font-size: 24px
     h1
@@ -191,6 +228,7 @@
     #need_for h3
         font-size: 32px
         margin-bottom: 30px
+        line-height: 1
     #need_for
         top 0
     .modal-body
@@ -218,9 +256,6 @@
         font-size: 24px
         line-height: 1.3
         margin-top: 20px
-    #main_last .button
-        max-width 360px
-        width: 100%
     #footer #conditions, #footer p
         font-size: 14px
     .button_partner
@@ -238,6 +273,24 @@
         width: 100%
     #testims_container.owl-carousel .owl-item
         min-height 70px
+    #footer h5
+        font-size: 20px
+    .soc_buttons a
+        margin 10px 8px
+    .main_plan_day
+        padding: 90px 30px 80px
+    .form_newsletter_last .button, .form_newsletter_last input
+        width: 90%
+        max-width 310px
+    .checking
+        display block
+        max-width none
+        width: 90%
+    .task_question
+        font-size: 18px
+        padding 10px
+    #bonus #main_content
+        padding-bottom: 0
 @media screen and (max-width 320px)
     h1
         font-size: 30px

@@ -1,10 +1,24 @@
 section#main_last
-    .container
-        .last_container
-            h4 Достигай большего ежедневно!
-            p Десятки учеников доверяют нам и реализуют свои цели
-            h5 Начните сейчас это безоплатно!
-            a.button.button_vk(href="" target="_blank" onclick="alert('Нет ссылки'); return false;") Записаться через 
-                i.fa.fa-vk(aria-hidden="true")
-            button.button.button_mail(data-toggle="modal" data-target="#myModalForm") Записаться через 
-                i.fa.fa-envelope(aria-hidden="true")
+	.container
+		.last_container
+			h4 Достигай большего ежедневно!
+			p Десятки учеников доверяют нам и реализуют свои цели
+			form(action="https://aleksandrkudryashov1.autoweboffice.ru/?r=personal/newsletter/sub/add&id=3568&lg=ru&Contact[id_newsletter]=411" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target="_blank").row.form_newsletter.form_newsletter_last
+				h5.mail_section_title.infront Начните сейчас это безоплатно!
+				p.mail_section_bonus.infront_submit.hide
+				.email-block
+					input( type="hidden" value="1" name="required_fields[email]")
+					input(class="mail" maxlength="255" name="Contact[email]" type="text" placeholder="Ваш email")
+				button.button.button_mail(type="submit") Записаться
+				.clearfix
+				<!--Обязательный параметр. Не удалять и не изменять!-->
+				input(type="hidden" value="411" name="Contact[id_newsletter]")
+				<!--API код канала рекламы-->
+				input(type="hidden" value="Тэсс Русские Руны" name="Contact[id_advertising_channel_page]")
+				p.alert_message
+				.checking
+					input(type="checkbox" id="check_2" checked).check
+					label(for="check_2").check_label Согласен/на на обработку 
+						a(href="javascript:void(0);" data-toggle="modal" data-target="#myPolitics") персональных данных
+						|  по 152 - Ф3
+				a(href="https://vk.com/app6051158_-96028637#uue47i" target="_blank")

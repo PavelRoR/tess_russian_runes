@@ -21,7 +21,7 @@
 	margin: 0 auto
 	a
 		display: inline-block
-		margin: 20px 18px
+		margin: 20px 13px
 		position relative
 		z-index: 1
 		.fa
@@ -81,115 +81,4 @@ button.close
         font-family: "OpenSansLightItalic", sans-serif;
         color: #301b0c;
     input
-        width: 260px
-        height: 50px
-        line-height: 50px
-        border: none
-        margin: 20px auto 10px
-        text-indent: 20px
-        background-color: #F3EEE0
-        box-shadow: 0 0 5px 3px rgba(0,0,0,.15) inset
-.alert_message {
-	display: none;
-	text-align: center;
-	font-size: 16px;
-	padding-top: 10px;
-	font-family: 'OpenSansRegular', sans-serif;
-	color: red;
-}
-.checking {
-	display: table;
-	max-width: 90%;
-	margin: 20px auto 0;
-	text-align: left;
-}
-
-.checking .check_label {
-	font-size: 11px;
-	font-family: "OpenSansRegular", sans-serif;
-	color: rgba(17, 17, 18, 0.8);
-	line-height: 22px;
-	cursor: pointer;
-	position: relative;
-	display: table-cell;
-	vertical-align: middle;
-	padding: 0 0 0 30px;
-	text-align: left
-}
-
-.checking .check_label a {
-	color: #4745d7
-    text-decoration: underline
-}
-
-.checking .check_label:before {
-	content: '';
-	border-radius: 2px;
-	background-color: #aaa;
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 22px;
-	height: 22px;
-
-}
-
-.checking .check_label:after {
-	content: '';
-	position: absolute;
-	top: 3px;
-	left: -15px;
-	width: 18px;
-	height: 18px;
-	left: 3px;
-	top: -30px;
-	width: 16px;
-	height: 26px;
-	background-color: transparent;
-	opacity: 0;
-	border-bottom: 3px solid #FFD738;
-	border-right: 3px solid #FFD738;
-	-webkit-transform: rotate(41deg);
-	-ms-transform: rotate(41deg);
-	transform: rotate(41deg);
-	-webkit-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	transition: all 0.5s ease;
-
-}
-
-.check {
-	position: absolute;
-	z-index: -1;
-	opacity: 0;
-	width: 0;
-	height 0;
-	border: 0;
-	left -99999px;
-}
-
-.check:checked + label:before {
-	border: 1px solid #c4c4c4;
-	background-color: #fff;
-
-}
-
-.check:checked + label:after {
-	opacity: 1;
-	top: -10px;
-	-webkit-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	transition: all 0.5s ease;
-}
-
-@-webkit-keyframes autofill {
-	to {
-		color: rgba(29, 28, 24, 0.702);
-		background: #f7f8fa;
-	}
-}
-
-input:-webkit-autofill {
-	-webkit-animation-name: autofill;
-	-webkit-animation-fill-mode: both;
-}
+        margin: 20px auto

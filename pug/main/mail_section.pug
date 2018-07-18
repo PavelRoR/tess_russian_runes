@@ -1,12 +1,24 @@
 section#mail_section
-    .container
-        .row
-            .col-lg-6
-                h4.mail_section_title Запишитесь сейчас и получите БОНУС!
-                p.mail_section_bonus Название бонуса
-            .col-lg-3.col-md-6
-                a.button.button_vk(href="" target="_blank" onclick="alert('Нет ссылки'); return false;") Записаться через 
-                    i.fa.fa-vk(aria-hidden="true")
-            .col-lg-3.col-md-6
-                button.button.button_mail(data-toggle="modal" data-target="#myModalForm") Записаться через 
-                    i.fa.fa-envelope(aria-hidden="true")
+	.container
+		form(action="https://aleksandrkudryashov1.autoweboffice.ru/?r=personal/newsletter/sub/add&id=3568&lg=ru&Contact[id_newsletter]=411" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target="_blank").row.form_newsletter.form_newsletter_main
+			.col-lg-6.col-md-6
+				h4.mail_section_title.infront Запишитесь сейчас и получите БОНУС!
+				p.mail_section_bonus.infront_submit Всегда удачная дорога с Руной ПУТЬ
+			.col-lg-3.col-md-3
+				.email-block
+					input( type="hidden" value="1" name="required_fields[email]")
+					input(class="mail" maxlength="255" name="Contact[email]" type="text" placeholder="Ваш email")
+			.col-lg-3.col-md-3
+				button.button.button_mail(type="submit") Записаться
+			.clearfix
+			<!--Обязательный параметр. Не удалять и не изменять!-->
+			input(type="hidden" value="411" name="Contact[id_newsletter]")
+			<!--API код канала рекламы-->
+			input(type="hidden" value="Тэсс Русские Руны" name="Contact[id_advertising_channel_page]")
+			p.alert_message
+			.checking
+				input(type="checkbox" id="check_1" checked).check
+				label(for="check_1").check_label Согласен/на на обработку 
+					a(href="javascript:void(0);" data-toggle="modal" data-target="#myPolitics") персональных данных
+					|  по 152 - Ф3
+			a(href="https://vk.com/app6051158_-96028637#uue47i" target="_blank")

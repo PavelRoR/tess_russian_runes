@@ -24,10 +24,9 @@ $(document).ready(function () {
                 message.text('Подтвердите соглашение').slideDown(500);
                 return false;
             } else {
-                $('.infront').addClass('hide');
+                $('.infront', this).addClass('hide');
                 $(".infront_submit", this).addClass("hide");
                 $(".infront_submit", this).html("Зарегистрирован Ваш e-mail: " + email.val() + "<br>Бонус уже у Вас на почте").removeClass("hide");
-                var atr = $(this).attr('action');
                 button.text('Отправлено');
             }
         });
@@ -36,7 +35,7 @@ $(document).ready(function () {
             message.slideUp(500);
         });
         check.click(function () {
-            check.next().css("color", "rgba(17, 17, 18, 0.8)");
+            check.next().css("color", "#fff");
             message.slideUp(500);
         });
     });

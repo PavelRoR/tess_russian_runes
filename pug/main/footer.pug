@@ -8,24 +8,24 @@ footer#footer
 				button(type="button" class="close" data-dismiss="modal" aria-label="Close")
 					span(aria-hidden="true") &times;
 				.modal-body
-					form#modalForm(action="https://aleksandrkudryashov1.autoweboffice.ru/?r=personal/newsletter/sub/add&id=3568&lg=ru&Contact[id_newsletter]=" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target="_blank").form_newsletter.form_modal
+					form#modalForm(action="https://aleksandrkudryashov1.autoweboffice.ru/?r=personal/newsletter/sub/add&id=3568&lg=ru&Contact[id_newsletter]=411" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target="_blank").form_newsletter.form_modal
 						h4.infront Запишись сейчас  и получи бонус!
 						p.form_bonus.form_bonus_after.infront_submit.hide
-						p.form_bonus.infront «Название бонуса»
+						p.form_bonus.infront «Всегда удачная дорога с Руной ПУТЬ»
 						.email-block
 							input( type="hidden" value="1" name="required_fields[email]")
 							input(class="mail" name="Contact[email]" type="text" placeholder="Ваш email")
 						button(type="submit").button.button_mail Записаться
 						p.alert_message
 						<!--Обязательный параметр. Не удалять и не изменять!-->
-						input(type="hidden" value="" name="Contact[id_newsletter]")
+						input(type="hidden" value="411" name="Contact[id_newsletter]")
 						<!--API код канала рекламы-->
 						input(type="hidden" value="Тэсс Русские Руны" name="Contact[id_advertising_channel_page]")
 						.checking
 							input(type="checkbox" id="check" checked).check
-							label(for="check").check_label Я согласен с 
-								a(href="javascript:void(0);")(data-toggle="modal" data-target="#myPolitics")  условиями обработки
-								|  персональных данных
+							label(for="check").check_label Согласен/на на обработку 
+								a(href="javascript:void(0);")(data-toggle="modal" data-target="#myPolitics")  персональных данных
+								|  по 152 - Ф3
 .modal.fade(tabindex="-1" role="dialog")#myPolitics
 	.modal-dialog(role="document")
 		.modal-content

@@ -1,17 +1,134 @@
 #mail_section
-    padding 47px 0
-    background-image url(../img/paper_bg.png)
-    background-repeat: repeat-x
-    background-size contain
-    position relative
-    top: -23px
-    z-index 9
+	padding 47px 0
+	background-image url(../img/paper_bg.png)
+	background-repeat: repeat-x
+	background-size contain
+	position relative
+	top: -30px
+	z-index 9
 .mail_section_title
-    font-size: 26px;
-    color: rgba(26, 20, 13, 0.902);
-    margin -5px 0 6px
-    letter-spacing: -0.5px;
+	font-size: 26px;
+	color: rgba(26, 20, 13, 0.902);
+	margin -5px 0 0
+	letter-spacing: -0.5px;
 .mail_section_bonus
-  font-size: 18px;
-  font-family: "OpenSansLightItalic", sans-serif;
-  color: rgb(48, 27, 12);
+	font-size: 18px;
+	font-family: "OpenSansLightItalic", sans-serif;
+	color: rgb(48, 27, 12);
+.form_newsletter
+	input
+		width: 260px
+		height: 56px
+		line-height: 56px
+		border: none
+		margin: 0 auto
+		padding-left:  20px
+		background-color: #F3EEE0
+		box-shadow: 0 0 5px 3px rgba(0,0,0,.15) inset
+		display: block
+		margin: 0 auto
+
+.alert_message {
+	display: none;
+	text-align: center;
+	font-size: 16px;
+	padding-top: 10px;
+	font-family: 'OpenSansRegular', sans-serif;
+	color: red;
+}
+.checking {
+	display: table;
+	max-width: 90%;
+	margin: 20px auto 0;
+	text-align: left;
+}
+
+.checking .check_label {
+	font-size: 11px;
+	font-family: "OpenSansRegular", sans-serif;
+	color: #fff
+	line-height: 22px;
+	cursor: pointer;
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 0 0 30px;
+	text-align: left
+}
+
+.checking .check_label a {
+	color: #fff
+	text-decoration: underline
+}
+
+.checking .check_label:before {
+	content: '';
+	border-radius: 2px;
+	background-color: #aaa;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 22px;
+	height: 22px;
+
+}
+
+.checking .check_label:after {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: -15px;
+	width: 18px;
+	height: 18px;
+	left: 3px;
+	top: -30px;
+	width: 16px;
+	height: 26px;
+	background-color: transparent;
+	opacity: 0;
+	border-bottom: 3px solid #FFD738;
+	border-right: 3px solid #FFD738;
+	-webkit-transform: rotate(41deg);
+	-ms-transform: rotate(41deg);
+	transform: rotate(41deg);
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+
+}
+
+.check {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	width: 0;
+	height 0;
+	border: 0;
+	left -99999px;
+}
+
+.check:checked + label:before {
+	border: 1px solid #c4c4c4;
+	background-color: #fff;
+
+}
+
+.check:checked + label:after {
+	opacity: 1;
+	top: -10px;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+@-webkit-keyframes autofill {
+	to {
+		color: rgba(29, 28, 24, 0.702);
+		background: #f7f8fa;
+	}
+}
+
+input:-webkit-autofill {
+	-webkit-animation-name: autofill;
+	-webkit-animation-fill-mode: both;
+}
